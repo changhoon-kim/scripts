@@ -1,11 +1,13 @@
 import os, sys
+from os.path import expanduser
 
 # $HOME/.vimrc -> {user_path}/vim/.vimrc
 
-vim_path = "" # vim path
+home = expanduser("~")
+vim_path = "%s/.vim" %(home) # vim path
 
-exist_vimrc = "%s/vim/.vimrc" %(vim_path)
-changed_vimrc = "%s/vim/changed_vimrc" %(vim_path)
+exist_vimrc = "%s/.vimrc" %(vim_path)
+changed_vimrc = "%s/changed_vimrc" %(vim_path)
 pwd = os.getcwd()
 
 if not os.path.exists("%s/tags" %(pwd)):
