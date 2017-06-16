@@ -1,4 +1,4 @@
-MAKE_DIR=~/Desktop/kch/algorithm/algospot
+MAKE_DIR=~/Desktop/changhoon/algorithm/algospot
 PWD=`pwd`
 cp $MAKE_DIR/Makefile $PWD
 make
