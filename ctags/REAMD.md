@@ -2,3 +2,4 @@
 2. set vim_path in ctags_change_in_vimrc.py
 3. add this script path to $PATH
 4. set filereadable in .vimrc
+5. if use crotab, update file path
